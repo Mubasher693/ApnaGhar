@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:orientation="vertical" >
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <!-- Thumbnail Image -->
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" />
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- Propert Type -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#009A57"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" 
+        android:text="Title"/>
+    
+      <!--  Propert Location -->
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#166CED"
+        android:textSize="@dimen/year" 
+        android:text="Location"/>
+    
+    <!-- Totall bedroms -->
+    <TextView
+        android:id="@+id/beds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#166CED"
+        android:textSize="@dimen/year"
+        android:text="Beds" />
+    
+    <!-- Totall baths -->
+    <TextView
+        android:id="@+id/baths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/year" 
+        android:textColor="#166CED"
+        android:text="Baths"/>
+    
+    </LinearLayout>
+ </LinearLayout>
+ <!-- Description -->
+ <TextView
+        android:id="@+id/descriptionn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#166CED"
+        android:text="Description" />
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" >
+ <!-- price -->
+     <TextView
+         android:id="@+id/price"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Price"
+         android:textColor="#166CED" />
+ <!-- for -->
+     <TextView
+         android:id="@+id/propfor"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="For"
+         android:textColor="#166CED" />
+
+ </LinearLayout>
+</LinearLayout>

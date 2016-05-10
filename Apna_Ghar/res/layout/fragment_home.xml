@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/front_activity_xhdpi"
+    android:orientation="vertical" >
+
+<!-- <FrameLayout -->
+<!--     android:layout_width="fill_parent" -->
+<!--     android:layout_height="402dp" > -->
+
+<!--     <ImageView -->
+<!--         android:id="@+id/imageView1" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="fill_parent" -->
+<!--         android:scaleType="fitXY" -->
+<!--         android:src="@drawable/front_activity_xhdpi" /> -->
+
+<!-- </FrameLayout> -->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:background="#25a925"
+        android:text="Signup "
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:background="#25a925"
+        android:text="Lets Search "
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:background="#25a925"
+        android:text="Login "
+        android:textColor="#ffffff" />
+
+</LinearLayout>
+
+</LinearLayout>

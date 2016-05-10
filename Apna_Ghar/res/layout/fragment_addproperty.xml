@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ 
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp" 
+        android:background="@drawable/dumy">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Email" />
+   <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address" />
+      <EditText
+        android:id="@+id/area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Area  (Sq Ft)" />
+        <Spinner 
+        android:id="@+id/city"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:entries="@array/city"/>
+         <EditText
+        android:id="@+id/bed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bed Room" />
+         <EditText
+        android:id="@+id/bath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bath Room" />
+         <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price ($)" />
+        
+        <Spinner 
+        android:id="@+id/contract"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:entries="@array/contract"/>
+        
+         <Spinner 
+        android:id="@+id/ptype"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:entries="@array/propertytype"/>
+         
+ 		<EditText
+        android:id="@+id/discription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Discription" />
+         
+    <Button
+        android:id="@+id/buttonLoadPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_background"
+        android:onClick="loadImagefromGallery"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Load Picture" >
+
+    </Button>
+ 
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_background"
+        android:onClick="uploadImage"
+        android:text="Upload" />
+ 
+</LinearLayout>
+</ScrollView>

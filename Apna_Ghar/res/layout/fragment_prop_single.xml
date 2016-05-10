@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:layout_marginBottom="5dp"
+    android:padding="5dp" >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="200dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1.03" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/Features"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="Features"
+        android:textColor="#009A57"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/types"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:text="Family Home"
+        android:textColor="#009A57"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/locations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingTop="5dp"
+        android:text="Islamabad"
+        android:textColor="#166CED"
+        android:textSize="@dimen/year" />
+
+    
+
+    <TextView
+        android:id="@+id/descs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingTop="5dp"
+        android:text="This is a home description text describing about it"
+        android:textColor="#166CED"
+        android:textSize="@dimen/year" />
+
+    <TextView
+        android:id="@+id/prics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingTop="5dp"
+        android:text="This is a home description text describing about it"
+        android:textColor="#166CED"
+        android:textSize="@dimen/year" />
+
+    <TextView
+        android:id="@+id/pfors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingTop="5dp"
+        android:text="This is a home description text describing about it"
+        android:textColor="#166CED"
+        android:textSize="@dimen/year" />
+
+    <TextView
+        android:id="@+id/Rooms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:text="Rooms"
+        android:textColor="#009A57"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/baths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingTop="5dp"
+        android:text="$40000"
+        android:textColor="#166CED"
+        android:textSize="@dimen/year" />
+
+    <TextView
+        android:id="@+id/beds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingTop="5dp"
+        android:text="Khayaban-e-sirsyed"
+        android:textColor="#166CED"
+        android:textSize="@dimen/year" />
+
+    <TextView
+        android:id="@+id/nodrwingroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingTop="5dp"
+        android:text="$40000"
+        android:textColor="#166CED"
+        android:textSize="@dimen/year" />
+
+    <TextView
+        android:id="@+id/Bandc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:text="Business And Communication"
+        android:textColor="#009A57"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/sandcabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingTop="5dp"
+        android:text="Yes"
+        android:textColor="#166CED"
+        android:textSize="@dimen/year" />
+
+    <TextView
+        android:id="@+id/intercom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingTop="5dp"
+        android:text="Yes"
+        android:textColor="#166CED"
+        android:textSize="@dimen/year" />
+    <EditText
+        android:id="@+id/comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="Please leave a comment"
+        android:textColor="#166CED"
+        android:textSize="@dimen/year" />
+    
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:gravity="bottom" >
+
+    <Button
+        android:id="@+id/all_prop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Search Property" 
+         android:background="#25a925"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/my_prop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#25a925"
+        android:text="My Property"
+        android:textColor="#ffffff" />
+   
+</LinearLayout>
+
+</LinearLayout>
+</ScrollView>

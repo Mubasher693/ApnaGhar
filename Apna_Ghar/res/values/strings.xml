@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Apna Ghar</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="spinner_title">Select Role</string>
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Home</item>
+        <item >All Property</item>
+        <item >Property For Rent</item>
+        <item >Property For Sale</item>
+        <item >Property For Build</item>
+        <item >Signup</item>
+        <item >Login</item>
+        <item >Logout</item>
+        
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/logo_one</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_whats_hot</item>
+        <item>@drawable/ic_whats_hot</item>
+    </array>
+    
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <string-array name="span">
+<item>Select Role</item>
+<item>Builder</item>
+<item>Buyer</item>
+<item>Seller</item>
+</string-array>
+
+     <string-array name="role">
+	<item>Select Role</item>
+	<item>Builder</item>
+	<item>Buyer</item>
+	<item>Seller</item>
+	</string-array>
+	
+    <string-array name="contract">
+	<item>Contract Type</item>
+	<item>For Sale</item>
+	<item>For Rent</item>
+	
+	</string-array>
+	
+    <string-array name="city">
+	<item>Select City</item>
+	<item>Rawalpindi</item>
+	<item>Islamabad</item>
+	
+	</string-array>
+	<string-array name="propertytype">
+	<item>Property Type</item>
+	<item>Family Home</item>
+	<item>Apartment</item>
+	<item>Office</item>
+	<item>Villa</item>
+	
+	</string-array>
+</resources>

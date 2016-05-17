@@ -180,6 +180,25 @@
         android:text="Please leave a comment"
         android:textColor="#166CED"
         android:textSize="@dimen/year" />
+    <TextView
+        android:id="@+id/contac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:text="Contact "
+        android:textColor="#009A57"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/contactno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingTop="5dp"
+        android:text="Yes"
+        android:textColor="#166CED"
+        android:textSize="@dimen/year" />
     
 </LinearLayout>
 

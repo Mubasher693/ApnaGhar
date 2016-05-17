@@ -72,7 +72,9 @@
 
  <LinearLayout
      android:layout_width="match_parent"
-     android:layout_height="wrap_content" >
+     android:layout_height="wrap_content"
+     android:orientation="vertical" >
+
  <!-- price -->
      <TextView
          android:id="@+id/price"
@@ -87,6 +89,12 @@
          android:layout_height="wrap_content"
          android:text="For"
          android:textColor="#166CED" />
-
+<!-- contact no -->
+     <TextView
+         android:id="@+id/contactno"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="No Not Avalable"
+         android:textColor="#166CED" />
  </LinearLayout>
 </LinearLayout>

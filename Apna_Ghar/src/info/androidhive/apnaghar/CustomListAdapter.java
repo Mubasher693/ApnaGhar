@@ -66,26 +66,28 @@ public class CustomListAdapter extends BaseAdapter {
 		TextView price = (TextView) convertView.findViewById(R.id.price);
 		TextView descriptionn = (TextView) convertView.findViewById(R.id.descriptionn);
 		TextView propfor = (TextView) convertView.findViewById(R.id.propfor);
+		TextView propcon = (TextView) convertView.findViewById(R.id.contactno);
 		// getting movie data for the row
 		Property m = propertyItems.get(position);
 
 		// thumbnail image
 		thumbNail.setImageUrl(m.getThumbnailUrl(), imageLoader);
 		// title
-		title.setText("Type :"+ m.getTitle());
+		title.setText("Type : "+ m.getTitle());
 		// beds
-		beds.setText(String.valueOf("Bed Room :"+m.getBeds()));
+		beds.setText(String.valueOf("Bed Room : "+m.getBeds()));
 		//location
-		location.setText(String.valueOf("Location :"+m.getProperty_location()));
+		location.setText(String.valueOf("Location : "+m.getProperty_location()));
 		//baths
-		baths.setText(String.valueOf("Bath Room :"+m.getBaths()));
+		baths.setText(String.valueOf("Bath Room : "+m.getBaths()));
 		// price
-		price.setText("Price :"+ m.getPrice());
+		price.setText("Price : "+ m.getPrice());
 		// desc
-		descriptionn.setText("Description :"+ m.getDescriptionn());
+		descriptionn.setText("Description : "+ m.getDescriptionn());
 		// for
-		propfor.setText("For :"+ m.getPropfor());
-		
+		propfor.setText("For : "+ m.getPropfor());
+		//contact
+		propcon.setText("Contact no : "+ m.getPopcontact());
 		
 		return convertView;
 	}

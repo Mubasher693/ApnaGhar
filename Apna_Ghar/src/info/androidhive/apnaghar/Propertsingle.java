@@ -66,6 +66,7 @@ public class Propertsingle extends Activity {
 		TextView nodrwingroom;
 		TextView sandcabel;
 		TextView intercom;
+		TextView pcon;
 		ImageView imge;
 		
 		type=(TextView)findViewById(R.id.types);
@@ -78,6 +79,7 @@ public class Propertsingle extends Activity {
 		nodrwingroom=(TextView)findViewById(R.id.nodrwingroom);
 		intercom=(TextView)findViewById(R.id.intercom);
 		sandcabel=(TextView)findViewById(R.id.sandcabel);
+		pcon=(TextView)findViewById(R.id.contactno);
 		imge=(ImageView)findViewById(R.id.thumbnail);
 		cmnt= (EditText)findViewById(R.id.comments);
 		// Get the intent from ListViewAdapter
@@ -89,6 +91,7 @@ public class Propertsingle extends Activity {
 		 String description = i.getStringExtra("description");
 		 String price = i.getStringExtra("price");
 		 String propfor = i.getStringExtra("propfor");
+		 String cnumber = i.getStringExtra("propcont");
 		 ImageLoader imageLoader = AppController.getInstance().getImageLoader();
 		 String bitmap = i.getStringExtra("images");
 		 ((NetworkImageView) imge).setImageUrl(bitmap, imageLoader);
@@ -102,6 +105,7 @@ public class Propertsingle extends Activity {
 		 nodrwingroom.setText("Drawing Room : "+ "YES");
 		 sandcabel.setText("Satellite Or Cable TV Ready : "+ "YES");
 		 intercom.setText("Intercom : "+ "YES");
+		 pcon.setText("Contact no : "+ cnumber);
 		 myprop=(Button)findViewById(R.id.my_prop);
 		 allprop=(Button)findViewById(R.id.all_prop);
 		 SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());

@@ -1,7 +1,7 @@
 package info.androidhive.apnaghar;
 
 public class Property {
-	private String title, thumbnailUrl , price ,descriptionn ,propfor;
+	private String title, thumbnailUrl , price ,descriptionn ,propfor,popcontact;
 	private int beds;
 	private int baths;
 	
@@ -11,7 +11,7 @@ public class Property {
 	public Property() {
 	}
 
-	public Property(String name, String thumbnailUrl, int beds,String property_location ,int baths ,String price,String descriptionn,String propfor) {
+	public Property(String name, String thumbnailUrl, int beds,String property_location ,int baths ,String price,String descriptionn,String propfor ,String popcontact) {
 		this.title = name;
 		this.thumbnailUrl = thumbnailUrl;
 		this.beds = beds;
@@ -20,6 +20,7 @@ public class Property {
 		this.price=price;
 		this.descriptionn=descriptionn;
 		this.propfor=propfor;
+		this.popcontact=popcontact;
 		
 	}
 
@@ -76,7 +77,12 @@ public class Property {
 	public void setDescriptionn(String descriptionn) {
 		this.descriptionn = descriptionn;
 	}
-
+	public void setPopcontact(String popcontact) {
+		this.popcontact = popcontact;
+	}
+	public String getPopcontact() {
+		return popcontact;
+	}
 	
 	
 

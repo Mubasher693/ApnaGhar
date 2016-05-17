@@ -68,6 +68,7 @@ public class P_ForsaleFragment extends Fragment {
 				String descrp= propertyList.get(position).getDescriptionn();
 				String price= propertyList.get(position).getPrice();
 				String propfor= propertyList.get(position).getPropfor();
+				String propcon= propertyList.get(position).getPopcontact();
 				
 				
 				
@@ -80,6 +81,7 @@ public class P_ForsaleFragment extends Fragment {
 				 intent.putExtra("description", descrp);
 				 intent.putExtra("price", price);
 				 intent.putExtra("propfor", propfor);
+				 intent.putExtra("propcont", propcon);
 				 
           
                 startActivity(intent);
@@ -110,6 +112,7 @@ public class P_ForsaleFragment extends Fragment {
 								prop.setPrice(obj.getString("property_price"));
 								prop.setDescriptionn(obj.getString("property_description"));
 								prop.setPropfor(obj.getString("property_for"));
+								prop.setPopcontact(obj.getString("user_no"));
 								// adding prop to property array
 								propertyList.add(prop);
 

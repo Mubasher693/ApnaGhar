@@ -279,9 +279,9 @@ public class MainActivity extends Activity {
 		mDrawerToggle.onConfigurationChanged(newConfig);
 	}
 	
-	protected void onPause() {
-		// TODO Auto-generated method stub
-		super.onPause();
-		finish();
-	}
+//	protected void onPause() {
+//		// TODO Auto-generated method stub
+//		super.onPause();
+//		finish();
+//	}
 }

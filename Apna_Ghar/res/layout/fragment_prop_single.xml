@@ -196,7 +196,8 @@
         android:layout_height="wrap_content"
         android:paddingLeft="25dp"
         android:paddingTop="5dp"
-        android:text="Yes"
+        android:autoLink="phone"
+        android:text="Not Avaialble"
         android:textColor="#166CED"
         android:textSize="@dimen/year" />
     

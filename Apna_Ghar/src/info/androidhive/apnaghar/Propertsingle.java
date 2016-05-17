@@ -198,10 +198,10 @@ public class Propertsingle extends Activity {
 
 	    return super.onOptionsItemSelected(item);
 	}
-	@Override
-	protected void onPause() {
-		// TODO Auto-generated method stub
-		super.onPause();
-		finish();
-	}
+	//@Override
+//	protected void onPause() {
+//		// TODO Auto-generated method stub
+//		super.onPause();
+//		finish();
+//	}
 }

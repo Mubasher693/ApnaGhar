@@ -172,14 +172,6 @@
         android:text="Yes"
         android:textColor="#166CED"
         android:textSize="@dimen/year" />
-    <EditText
-        android:id="@+id/comments"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="5dp"
-        android:text="Please leave a comment"
-        android:textColor="#166CED"
-        android:textSize="@dimen/year" />
     <TextView
         android:id="@+id/contac"
         android:layout_width="wrap_content"

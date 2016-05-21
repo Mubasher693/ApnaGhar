@@ -81,7 +81,7 @@ public class Propertsingle extends Activity {
 		sandcabel=(TextView)findViewById(R.id.sandcabel);
 		pcon=(TextView)findViewById(R.id.contactno);
 		imge=(ImageView)findViewById(R.id.thumbnail);
-		cmnt= (EditText)findViewById(R.id.comments);
+		//cmnt= (EditText)findViewById(R.id.comments);
 		// Get the intent from ListViewAdapter
 		 Intent i=getIntent();
 		 String name = i.getStringExtra("title");
@@ -129,13 +129,13 @@ public class Propertsingle extends Activity {
 			 
 		 }
 		 if(sharedPreferences.getString("email", null)=="" || sharedPreferences.getString("email", null)==null){
-			 cmnt.setVisibility(View.GONE); 
+			// cmnt.setVisibility(View.GONE); 
 			 myprop.setVisibility(View.GONE); 
 		 }
 		 if(propfor=="For Build" && sharedPreferences.getString("role", null)!="Seller"){
 			 myprop.setVisibility(View.VISIBLE); 
-			 cmnt.setVisibility(View.VISIBLE); 
-			 myprop.setText("Comment");
+			 //cmnt.setVisibility(View.VISIBLE); 
+			
 		 }
 		myprop.setOnClickListener(new OnClickListener() {
 			

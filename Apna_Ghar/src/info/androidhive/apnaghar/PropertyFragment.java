@@ -35,6 +35,8 @@ public class PropertyFragment extends Fragment {
 	private static final String TAG = MainActivity.class.getSimpleName();
 
 	// Movies json url
+	//http://10.0.2.2/webservice/propertyvolly.php
+	//http:androidtutorial.comxa.com/webservice/propertyvolly.php
 	private static final String url = "http://androidtutorial.comxa.com/webservice/propertyvolly.php";
 	private ProgressDialog pDialog;
 	private List<Property> propertyList = new ArrayList<Property>();

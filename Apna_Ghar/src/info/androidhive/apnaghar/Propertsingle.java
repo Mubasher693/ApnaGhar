@@ -109,9 +109,18 @@ public class Propertsingle extends Activity {
 		 myprop=(Button)findViewById(R.id.my_prop);
 		 allprop=(Button)findViewById(R.id.all_prop);
 		 SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-		 if(sharedPreferences.getString("role", null)!="Seller"){
+		 String roles = sharedPreferences.getString("role", null);
+		 
+		 if( roles ==null || roles !="Seller"){
+				
 			 myprop.setVisibility(View.GONE);
-			 
+			 LinearLayout.LayoutParams params = (LayoutParams) allprop.getLayoutParams();
+			 params.width = 100;
+			 allprop.setLayoutParams(params); 
+		 }
+		 
+		 if(roles != null && roles.equals("Seller") ){
+     		 myprop.setVisibility(View.VISIBLE);
 			 myprop.setOnClickListener(new OnClickListener() {
 					
 					@Override
@@ -123,31 +132,13 @@ public class Propertsingle extends Activity {
 						
 					}
 				});
-			 LinearLayout.LayoutParams params = (LayoutParams) allprop.getLayoutParams();
-			 params.width = 100;
-			 allprop.setLayoutParams(params);
-			 
-		 }
-		 if(sharedPreferences.getString("email", null)=="" || sharedPreferences.getString("email", null)==null){
-			// cmnt.setVisibility(View.GONE); 
-			 myprop.setVisibility(View.GONE); 
-		 }
-		 if(propfor=="For Build" && sharedPreferences.getString("role", null)!="Seller"){
-			 myprop.setVisibility(View.VISIBLE); 
-			 //cmnt.setVisibility(View.VISIBLE); 
 			
 		 }
-		myprop.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				Intent intent= new Intent(Propertsingle.this,My_property_Froagment.class);
-				startActivity(intent);
-				
-				
-			}
-		});
+		 
+		
+		
+		 
+		
 		allprop.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -198,10 +189,14 @@ public class Propertsingle extends Activity {
 
 	    return super.onOptionsItemSelected(item);
 	}
-	//@Override
-//	protected void onPause() {
-//		// TODO Auto-generated method stub
-//		super.onPause();
-//		finish();
-//	}
+    public void onBackPressed(){
+    	 startActivity(new Intent(Propertsingle.this, MainActivity.class));
+    }
+  
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+		finish();
+	}
 }

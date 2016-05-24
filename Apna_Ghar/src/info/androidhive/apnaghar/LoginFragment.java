@@ -3,6 +3,7 @@ package info.androidhive.apnaghar;
 import android.annotation.SuppressLint;
 import android.app.Fragment;
 import android.app.Dialog;
+import android.app.FragmentManager;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -239,5 +240,6 @@ public class LoginFragment extends Fragment{
 	        la.execute(username,useremail,password,userrole);
 	 
 	    }
+
 }
 

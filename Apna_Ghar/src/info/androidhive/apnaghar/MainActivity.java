@@ -20,6 +20,7 @@ import android.preference.PreferenceManager;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -50,6 +51,12 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+	    if (getIntent().getBooleanExtra("LOGOUT", false))
+	    {
+	        finish();
+	    }
+		
 		ActionBar bar = getActionBar();
 		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#319c34")));
 	bar.setDisplayShowHomeEnabled(true);
@@ -71,6 +78,12 @@ public class MainActivity extends Activity {
 		SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 		String email = sharedPreferences.getString("email", null);
 		String  roleee=sharedPreferences.getString("role",null);
+		Bundle bundle = new Bundle();
+		bundle.putString("rol", roleee);
+		// set Fragmentclass Arguments
+		HomeFragment fragobj = new HomeFragment();
+		fragobj.setArguments(bundle);
+		
 		// Home
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuIcons.getResourceId(0, -1)));
 			//AllProperty
@@ -143,6 +156,9 @@ public class MainActivity extends Activity {
 //		    FragmentManager fragmentManager = getFragmentManager();
 //		    fragmentManager.beginTransaction().replace(R.id.frame_container, fragment).commit();
 //		}
+		
+		
+	   
 	}
 
 	/**
@@ -173,11 +189,13 @@ public class MainActivity extends Activity {
 		// Handle action bar actions click
 		switch (item.getItemId()) {
 		case R.id.action_settings:
+			 this.finish();
 			return true;
 		default:
 			return super.onOptionsItemSelected(item);
 		}
 	}
+	
 
 	/* *
 	 * Called when invalidateOptionsMenu() is triggered
@@ -279,9 +297,30 @@ public class MainActivity extends Activity {
 		mDrawerToggle.onConfigurationChanged(newConfig);
 	}
 	
-//	protected void onPause() {
-//		// TODO Auto-generated method stub
-//		super.onPause();
-//		finish();
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+		finish();
+	}
+	
+//	private void backStack(){
+//	    if(getFragmentManager().getBackStackEntryCount()>1){
+//	    	Toast.makeText(this, "Add two", Toast.LENGTH_LONG).show();
+//	    	// getFragmentManager().popBackStack();
+//	    	Intent intent = new Intent(Intent.ACTION_MAIN);
+//	        intent.addCategory(Intent.CATEGORY_HOME);
+//	        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//	        startActivity(intent);
+//	    	
+//	    }else
+//	    if(getFragmentManager().getBackStackEntryCount()==1){
+//	    	Toast.makeText(this, "Add one", Toast.LENGTH_LONG).show();
+//	    	Intent intent = new Intent(Intent.ACTION_MAIN);
+//	        intent.addCategory(Intent.CATEGORY_HOME);
+//	        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//	        startActivity(intent);
+//	    }
 //	}
+	
+	
 }
